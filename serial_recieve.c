@@ -17,7 +17,7 @@ static QueueHandle_t xQueue = NULL;
 void AES_init_ctx(struct AES_ctx* ctx, const uint8_t* key);
 void AES_ECB_encrypt(const struct AES_ctx* ctx, uint8_t* buf);
 
-/* Task to serial recieve */
+/* Serial recieve task */
 void recieve(void *pvParameters) {
     while (1){
         uint8_t rand_bytes[16];
