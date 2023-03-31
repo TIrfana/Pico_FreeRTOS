@@ -12,13 +12,12 @@
 #include <time.h>
 
 static QueueHandle_t xQueue = NULL;
-//static QueueHandle_t xQueue2 = NULL;
+
 /*function declaration*/
 void AES_init_ctx(struct AES_ctx* ctx, const uint8_t* key);
 void AES_ECB_encrypt(const struct AES_ctx* ctx, uint8_t* buf);
 
 /* Task to serial recieve */
-
 void recieve(void *pvParameters) {
     while (1){
         uint8_t rand_bytes[16];
@@ -47,16 +46,6 @@ void vAESTask(void *pvParameters) {
 
     }
 }
-
-#if 0
-void send(void *pvParameters){
-    uint8_t CT[16];
-    while (1) {
-        xQueueReceive(xQueue2, &CT, portMAX_DELAY);
-        printf(CT);
-    }
-}
-#endif
 
 int main() {
     stdio_usb_init();
