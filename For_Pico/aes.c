@@ -1,5 +1,5 @@
 //
-// Created by Thilras Irfana on 21/2/23.
+// Copied from https://github.com/kokke/tiny-AES-c/blob/master/aes.c
 //
 
 #include "aes.h"
