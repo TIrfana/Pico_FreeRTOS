@@ -5,7 +5,6 @@
 #include "hardware/gpio.h" // add this header file
 #include "FreeRTOS.h"
 #include "task.h"
-#include "queue.h"
 #include "aes.h"
 #include <stdio.h>
 #include <stdint.h>
