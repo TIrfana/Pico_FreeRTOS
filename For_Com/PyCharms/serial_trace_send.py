@@ -36,7 +36,9 @@ open(file_locationPT, "w") #clear file
 open(file_locationCT, "w")
 ##### End of the setup ####
 
-file_locationT = "C:/Users/Work/Documents/Irfana/Python_Script/Traces.h5"
+now=datetime.today()
+now=now.strftime("%d_%m_%Y_%H_%M_%S")
+file_locationT = f"C:/Users/Work/Documents/Irfana/Python_Script/Traces{now}.h5"
    
 final_array = []
 tcounter = 0
