@@ -1,0 +1,4 @@
+matplotlib
+pywin32
+pyserial==3.5
+pycryptodome==3.17
